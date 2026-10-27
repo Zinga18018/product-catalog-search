@@ -1,7 +1,30 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "figure": "heldout-ranking.svg",
-  "renderer": "Python standard library; no external assets",
+  "renderer": "Matplotlib 3.10.8; Agg backend",
+  "chart_data": {
+    "n": 19,
+    "k": 5,
+    "ranks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      0
+    ],
+    "counts": [
+      17,
+      1,
+      0,
+      1,
+      0,
+      0
+    ],
+    "mrr": 0.9342105263157895,
+    "recall": 1.0
+  },
+  "svg_sha256": "de3e23a796c3a92baba7bab844c7b36c468188ed9a6420614db41c3a37220566",
   "scope": "19 answerable held-out synthetic author-labelled queries; no-answer query reported separately",
   "source_sha256": {
     "catalog_search/evaluate.py": "d36d7e50ae4df92f20aa2fe433301bc1f6adf589d3774deecd2d54ddcfa6c754",
@@ -10,6 +33,7 @@
     "data/queries.json": "73c3d5af9eb567fa222552be61318dc7f29179fb9d8ae54c09f81f163efe9308",
     "results/evaluation.json": "ebd97ca29bc43694d8aea113756d87268ed794b88b73962c6522d654f2fa387e",
     "results/per-query.csv": "1e564249001964c3cd44940ce220a90dd21e3d0342ea5dc5be0aa4d6f10b5fc7",
-    "scripts/render_readme_visual.py": "020250895a0091bae63092e0a3627c45fa0ba6a4509dc2ff7780e3ae3880a883"
+    "scripts/render_readme_visual.py": "7a2b2b1f76c591fa491bebeceff373f1df073cb25aea0240438ecaf19e8a79c0",
+    "requirements-visuals.txt": "c8f1063f2c45688d512cf2011a568669f9fd9602fcfabd4bae18caa7e96cc392"
   }
 }

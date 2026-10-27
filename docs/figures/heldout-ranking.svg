@@ -1,48 +1,221 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="640" height="860" viewBox="0 0 640 860" role="img" aria-labelledby="title desc">
-<title id="title">Product Catalog Search: shared ranks and lexical failure cases</title>
-<desc id="desc">On 19 answerable held-out queries, both TF-IDF and BM25 have the same first-relevant ranks: rank 1: 17, rank 2: 1, rank 3: 0, rank 4: 1, rank 5: 0; absent from top 5: 0. MRR@5 0.9342; Recall@5 1.0000. This is a tiny synthetic author-labelled demo, not an independent benchmark or evidence of method superiority.</desc>
-<rect width="640" height="860" rx="18" fill="#f8fafc"/>
-<rect x="0" y="0" width="640" height="140" rx="18" fill="#102b3f"/>
-<rect x="0" y="110" width="640" height="30" fill="#102b3f"/>
-<g font-family="DejaVu Sans, Arial, sans-serif" fill="#102b3f">
-<text x="28" y="35" font-size="15" fill="#b4e6e3" font-weight="bold" text-anchor="start">SEARCH LAB  /  54 SYNTHETIC PRODUCTS</text>
-<text x="28" y="76" font-size="27" fill="#ffffff" font-weight="bold" text-anchor="start">Same ranks. Useful failure cases.</text>
-<text x="28" y="111" font-size="19" fill="#dce9f0" font-weight="normal" text-anchor="start">TF-IDF and BM25 · held-out evaluation</text>
-<text x="28" y="179" font-size="21" fill="#102b3f" font-weight="bold" text-anchor="start">Where the first relevant product appears</text>
-<text x="28" y="209" font-size="17" fill="#43556b" font-weight="normal" text-anchor="start">19 answerable queries · both methods have these counts</text>
-<text x="28" y="263" font-size="18" fill="#102b3f" font-weight="normal" text-anchor="start">Rank 1</text>
-<rect x="146" y="243" width="390" height="27" rx="5" fill="#e7edf3"/>
-<rect x="146" y="243" width="348.9474" height="27" rx="5" fill="#087f81"/>
-<text x="610" y="263" font-size="19" fill="#102b3f" font-weight="bold" text-anchor="end">17/19</text>
-<text x="28" y="306" font-size="18" fill="#102b3f" font-weight="normal" text-anchor="start">Rank 2</text>
-<rect x="146" y="286" width="390" height="27" rx="5" fill="#e7edf3"/>
-<rect x="146" y="286" width="20.5263" height="27" rx="5" fill="#ad4b20"/>
-<text x="610" y="306" font-size="19" fill="#102b3f" font-weight="bold" text-anchor="end">1/19</text>
-<text x="28" y="349" font-size="18" fill="#102b3f" font-weight="normal" text-anchor="start">Rank 3</text>
-<rect x="146" y="329" width="390" height="27" rx="5" fill="#e7edf3"/>
-<text x="610" y="349" font-size="19" fill="#102b3f" font-weight="bold" text-anchor="end">0/19</text>
-<text x="28" y="392" font-size="18" fill="#102b3f" font-weight="normal" text-anchor="start">Rank 4</text>
-<rect x="146" y="372" width="390" height="27" rx="5" fill="#e7edf3"/>
-<rect x="146" y="372" width="20.5263" height="27" rx="5" fill="#ad4b20"/>
-<text x="610" y="392" font-size="19" fill="#102b3f" font-weight="bold" text-anchor="end">1/19</text>
-<text x="28" y="435" font-size="18" fill="#102b3f" font-weight="normal" text-anchor="start">Rank 5</text>
-<rect x="146" y="415" width="390" height="27" rx="5" fill="#e7edf3"/>
-<text x="610" y="435" font-size="19" fill="#102b3f" font-weight="bold" text-anchor="end">0/19</text>
-<text x="28" y="478" font-size="18" fill="#102b3f" font-weight="normal" text-anchor="start">Not in top 5</text>
-<rect x="146" y="458" width="390" height="27" rx="5" fill="#e7edf3"/>
-<text x="610" y="478" font-size="19" fill="#102b3f" font-weight="bold" text-anchor="end">0/19</text>
-<text x="28" y="526" font-size="20" fill="#102b3f" font-weight="bold" text-anchor="start">MRR@5  0.9342</text>
-<text x="285" y="526" font-size="20" fill="#102b3f" font-weight="bold" text-anchor="start">Recall@5  1.0000</text>
-<text x="28" y="555" font-size="17" fill="#43556b" font-weight="normal" text-anchor="start">Lower-order rankings can still differ between methods.</text>
-<rect x="22" y="581" width="596" height="88" rx="9" fill="#fff2e7" stroke="#e7c5aa"/>
-<text x="36" y="606" font-size="17" fill="#102b3f" font-weight="bold" text-anchor="start">T02  charge laptop away from wall outlet</text>
-<text x="36" y="632" font-size="16" fill="#89401e" font-weight="normal" text-anchor="start">#1  Compact 65W USB-C Charger</text>
-<text x="36" y="655" font-size="16" fill="#102b3f" font-weight="normal" text-anchor="start">#2  Roam 20000 USB-C Power Bank  [relevant]</text>
-<rect x="22" y="681" width="596" height="88" rx="9" fill="#fff2e7" stroke="#e7c5aa"/>
-<text x="36" y="706" font-size="17" fill="#102b3f" font-weight="bold" text-anchor="start">T05  keep coffee warm on commute</text>
-<text x="36" y="732" font-size="16" fill="#89401e" font-weight="normal" text-anchor="start">#1  Warmglow Reading Lamp</text>
-<text x="36" y="755" font-size="16" fill="#102b3f" font-weight="normal" text-anchor="start">#4  Lidded Commuter Travel Mug  [relevant]</text>
-<text x="28" y="800" font-size="15" fill="#43556b" font-weight="normal" text-anchor="start">No-answer check: 1/1 returned no results (reported separately).</text>
-<text x="28" y="827" font-size="15" fill="#43556b" font-weight="normal" text-anchor="start">Tiny author-labelled demo. No independent or production claim.</text>
-</g>
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="460.8pt" height="280.8pt" viewBox="0 0 460.8 280.8" xmlns="http://www.w3.org/2000/svg" version="1.1" role="img" aria-labelledby="title desc"><title id="title">First relevant result by rank</title><desc id="desc">Both TF-IDF and BM25 have the same first-relevant ranks on 19 answerable synthetic held-out queries: rank 1: 17, rank 2: 1, rank 3: 0, rank 4: 1, rank 5: 0, not in top 5: 0. Author-created labels; not an independent benchmark. Complete rankings can differ.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib 3.10.8</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 280.8 
+L 460.8 280.8 
+L 460.8 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 101.376 230.256 
+L 396.288 230.256 
+L 396.288 58.968 
+L 101.376 58.968 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <path d="M 101.376 230.256 
+L 101.376 58.968 
+" clip-path="url(#pbaaad1ac42)" style="fill: none; stroke: #e2e2e2; stroke-width: 0.7; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_2"/>
+     <g id="text_1">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle" x="101.376" y="245.854438" transform="rotate(-0 101.376 245.854438)">0</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_3">
+      <path d="M 178.984421 230.256 
+L 178.984421 58.968 
+" clip-path="url(#pbaaad1ac42)" style="fill: none; stroke: #e2e2e2; stroke-width: 0.7; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_4"/>
+     <g id="text_2">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle" x="178.984421" y="245.854438" transform="rotate(-0 178.984421 245.854438)">5</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_5">
+      <path d="M 256.592842 230.256 
+L 256.592842 58.968 
+" clip-path="url(#pbaaad1ac42)" style="fill: none; stroke: #e2e2e2; stroke-width: 0.7; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_6"/>
+     <g id="text_3">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle" x="256.592842" y="245.854438" transform="rotate(-0 256.592842 245.854438)">10</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_7">
+      <path d="M 334.201263 230.256 
+L 334.201263 58.968 
+" clip-path="url(#pbaaad1ac42)" style="fill: none; stroke: #e2e2e2; stroke-width: 0.7; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_8"/>
+     <g id="text_4">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle" x="334.201263" y="245.854438" transform="rotate(-0 334.201263 245.854438)">15</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_9">
+      <path d="M 396.288 230.256 
+L 396.288 58.968 
+" clip-path="url(#pbaaad1ac42)" style="fill: none; stroke: #e2e2e2; stroke-width: 0.7; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_10"/>
+     <g id="text_5">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle" x="396.288" y="245.854438" transform="rotate(-0 396.288 245.854438)">19</text>
+     </g>
+    </g>
+    <g id="text_6">
+     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle" x="248.832" y="265.532563" transform="rotate(-0 248.832 265.532563)">Number of synthetic queries</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_11"/>
+     <g id="text_7">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: end" x="93.376" y="78.645823" transform="rotate(-0 93.376 78.645823)">Rank 1</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_12"/>
+     <g id="text_8">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: end" x="93.376" y="106.551981" transform="rotate(-0 93.376 106.551981)">Rank 2</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_13"/>
+     <g id="text_9">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: end" x="93.376" y="134.45814" transform="rotate(-0 93.376 134.45814)">Rank 3</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_14"/>
+     <g id="text_10">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: end" x="93.376" y="162.364298" transform="rotate(-0 93.376 162.364298)">Rank 4</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_15"/>
+     <g id="text_11">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: end" x="93.376" y="190.270456" transform="rotate(-0 93.376 190.270456)">Rank 5</text>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_16"/>
+     <g id="text_12">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: end" x="93.376" y="218.176615" transform="rotate(-0 93.376 218.176615)">Not in top 5</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 101.376 230.256 
+L 396.288 230.256 
+" style="fill: none; stroke: #888888; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="rank-1">
+    <path d="M 101.376 66.753818 
+L 365.244632 66.753818 
+L 365.244632 82.93939 
+L 101.376 82.93939 
+z
+" clip-path="url(#pbaaad1ac42)" style="fill: #5b6c7a"/>
+   </g>
+   <g id="rank-2">
+    <path d="M 101.376 94.659977 
+L 116.897684 94.659977 
+L 116.897684 110.845548 
+L 101.376 110.845548 
+z
+" clip-path="url(#pbaaad1ac42)" style="fill: #5b6c7a"/>
+   </g>
+   <g id="rank-3">
+    <path d="M 101.376 122.566135 
+L 101.376 122.566135 
+L 101.376 138.751707 
+L 101.376 138.751707 
+z
+" clip-path="url(#pbaaad1ac42)" style="fill: #5b6c7a"/>
+   </g>
+   <g id="rank-4">
+    <path d="M 101.376 150.472293 
+L 116.897684 150.472293 
+L 116.897684 166.657865 
+L 101.376 166.657865 
+z
+" clip-path="url(#pbaaad1ac42)" style="fill: #5b6c7a"/>
+   </g>
+   <g id="rank-5">
+    <path d="M 101.376 178.378452 
+L 101.376 178.378452 
+L 101.376 194.564023 
+L 101.376 194.564023 
+z
+" clip-path="url(#pbaaad1ac42)" style="fill: #5b6c7a"/>
+   </g>
+   <g id="rank-0">
+    <path d="M 101.376 206.28461 
+L 101.376 206.28461 
+L 101.376 222.470182 
+L 101.376 222.470182 
+z
+" clip-path="url(#pbaaad1ac42)" style="fill: #5b6c7a"/>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="411.809684" y="77.605979" transform="rotate(-0 411.809684 77.605979)">17/19</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="411.809684" y="105.512137" transform="rotate(-0 411.809684 105.512137)">1/19</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="411.809684" y="133.418296" transform="rotate(-0 411.809684 133.418296)">0/19</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="411.809684" y="161.324454" transform="rotate(-0 411.809684 161.324454)">1/19</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="411.809684" y="189.230613" transform="rotate(-0 411.809684 189.230613)">0/19</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="411.809684" y="217.136771" transform="rotate(-0 411.809684 217.136771)">0/19</text>
+   </g>
+  </g>
+  <g id="text_19">
+   <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start" x="18.432" y="23.158125" transform="rotate(-0 18.432 23.158125)">First relevant result by rank</text>
+  </g>
+  <g id="text_20">
+   <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start" x="18.432" y="39.130594" transform="rotate(-0 18.432 39.130594)">TF-IDF and BM25: same counts on 19 answerable held-out queries</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pbaaad1ac42">
+   <rect x="101.376" y="58.968" width="294.912" height="171.288"/>
+  </clipPath>
+ </defs>
 </svg>
