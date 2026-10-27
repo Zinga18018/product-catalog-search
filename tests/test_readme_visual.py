@@ -13,11 +13,11 @@ spec.loader.exec_module(visual)
 
 class ReadmeVisualTests(unittest.TestCase):
     def test_checked_in_figure_and_provenance_are_current(self):
-        for name, content in visual.artifacts().items():
-            self.assertEqual((visual.DEST / name).read_text(encoding="utf-8"), content)
+        self.assertTrue(visual.verify_saved())
+        self.assertEqual(visual.chart_data(visual.checked_report())["counts"], [17, 1, 0, 1, 0, 0])
 
     def test_svg_has_accessible_text_and_no_external_assets(self):
-        svg = visual.figure(visual.checked_report())
+        svg = (visual.DEST / "heldout-ranking.svg").read_text(encoding="utf-8")
         root = ET.fromstring(svg)
         ns = {"s": "http://www.w3.org/2000/svg"}
         self.assertEqual(root.attrib["role"], "img")
@@ -33,7 +33,7 @@ class ReadmeVisualTests(unittest.TestCase):
         row = next(r for r in report["per_query"] if r["split"] == "heldout" and r["method"] == "bm25")
         row["reciprocal_rank_at_k"] = 0.5
         with self.assertRaisesRegex(ValueError, "no longer tie"):
-            visual.figure(report)
+            visual.chart_data(report)
 
 
 if __name__ == "__main__":
