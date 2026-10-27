@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "figure": "heldout-ranking.svg",
+  "renderer": "Python standard library; no external assets",
+  "scope": "19 answerable held-out synthetic author-labelled queries; no-answer query reported separately",
+  "source_sha256": {
+    "catalog_search/evaluate.py": "d36d7e50ae4df92f20aa2fe433301bc1f6adf589d3774deecd2d54ddcfa6c754",
+    "catalog_search/engine.py": "8fc0409a211c7742eecacdd533357a6968557463be17d1cf01e329a26ba94787",
+    "data/catalog.json": "89e041e1cca6cff176ffcfbeede98114b344f47485ba9233126d138ddcc81ca6",
+    "data/queries.json": "73c3d5af9eb567fa222552be61318dc7f29179fb9d8ae54c09f81f163efe9308",
+    "results/evaluation.json": "ebd97ca29bc43694d8aea113756d87268ed794b88b73962c6522d654f2fa387e",
+    "results/per-query.csv": "1e564249001964c3cd44940ce220a90dd21e3d0342ea5dc5be0aa4d6f10b5fc7",
+    "scripts/render_readme_visual.py": "020250895a0091bae63092e0a3627c45fa0ba6a4509dc2ff7780e3ae3880a883"
+  }
+}
