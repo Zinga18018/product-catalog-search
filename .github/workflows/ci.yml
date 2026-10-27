@@ -1,0 +1,23 @@
+name: Verify search demo
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.11', '3.14']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Compile Python
+        run: python -m compileall -q catalog_search tests
+      - name: Check JavaScript syntax
+        run: node --check static/app.js
+      - name: Unit and HTTP integration tests
+        run: python -m unittest discover -s tests -v
+      - name: Verify reproducible evaluation
+        run: python -m catalog_search.evaluate --check
