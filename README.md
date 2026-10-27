@@ -5,6 +5,12 @@ A runnable search laboratory for **54 clearly synthetic products**. Compare a TF
 This is a new portfolio demo built with Codex assistance in October 2026. The catalog and query labels were authored for the demo; there is no retail/customer data, historical project claim, or production performance claim. See [data provenance](data/README.md) and [design decisions](docs/design.md).
 
 
+## Evaluation at a glance
+
+![Both TF-IDF and BM25 place the first relevant product at rank 1 for 17 of 19 answerable held-out queries, rank 2 for one, and rank 4 for one. The chart shows the two lexical failure cases and separately reports the single no-answer query.](docs/figures/heldout-ranking.svg)
+
+A diagnostic view of the checked-in **synthetic, author-labelled** evaluation—not a screenshot, independent benchmark, or claim that one method is better. Lower-order rankings can differ even when these metrics tie. [Figure source, data and reproduction](docs/VISUALS.md).
+
 ## Run locally
 
 Python 3.11 or newer is required. There are **no third-party dependencies**, build step, API keys, network calls, or model downloads. Run commands from the repository root:
