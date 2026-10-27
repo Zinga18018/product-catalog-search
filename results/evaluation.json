@@ -1,0 +1,1062 @@
+{
+  "schema_version": 1,
+  "k": 5,
+  "catalog_sha256": "89e041e1cca6cff176ffcfbeede98114b344f47485ba9233126d138ddcc81ca6",
+  "queries_sha256": "73c3d5af9eb567fa222552be61318dc7f29179fb9d8ae54c09f81f163efe9308",
+  "product_count": 54,
+  "notes": "Synthetic author-judged demo; no independent benchmark or production claim. MRR@k and Recall@k average only answerable queries; no-answer false positives are separate.",
+  "splits": {
+    "dev": {
+      "query_count": 10,
+      "answerable_queries": 9,
+      "no_answer_queries": 1,
+      "tfidf": {
+        "mrr_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "no_answer_false_positive_rate": 0.0
+      },
+      "bm25": {
+        "mrr_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "no_answer_false_positive_rate": 0.0
+      }
+    },
+    "heldout": {
+      "query_count": 20,
+      "answerable_queries": 19,
+      "no_answer_queries": 1,
+      "tfidf": {
+        "mrr_at_k": 0.9342105263157895,
+        "recall_at_k": 1.0,
+        "no_answer_false_positive_rate": 0.0
+      },
+      "bm25": {
+        "mrr_at_k": 0.9342105263157895,
+        "recall_at_k": 1.0,
+        "no_answer_false_positive_rate": 0.0
+      }
+    }
+  },
+  "per_query": [
+    {
+      "id": "D01",
+      "split": "dev",
+      "query": "wireless mouse",
+      "method": "tfidf",
+      "relevant_ids": [
+        "E03"
+      ],
+      "top_ids": [
+        "E03",
+        "E04",
+        "E01"
+      ],
+      "reciprocal_rank_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "false_positive_no_answer": null
+    },
+    {
+      "id": "D01",
+      "split": "dev",
+      "query": "wireless mouse",
+      "method": "bm25",
+      "relevant_ids": [
+        "E03"
+      ],
+      "top_ids": [
+        "E03",
+        "E04",
+        "E01"
+      ],
+      "reciprocal_rank_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "false_positive_no_answer": null
+    },
+    {
+      "id": "D02",
+      "split": "dev",
+      "query": "coffee grinder",
+      "method": "tfidf",
+      "relevant_ids": [
+        "H03"
+      ],
+      "top_ids": [
+        "H03",
+        "H01",
+        "H02",
+        "H05",
+        "H04"
+      ],
+      "reciprocal_rank_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "false_positive_no_answer": null
+    },
+    {
+      "id": "D02",
+      "split": "dev",
+      "query": "coffee grinder",
+      "method": "bm25",
+      "relevant_ids": [
+        "H03"
+      ],
+      "top_ids": [
+        "H03",
+        "H01",
+        "H02",
+        "H05",
+        "H04"
+      ],
+      "reciprocal_rank_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "false_positive_no_answer": null
+    },
+    {
+      "id": "D03",
+      "split": "dev",
+      "query": "camping light hands free",
+      "method": "tfidf",
+      "relevant_ids": [
+        "O03"
+      ],
+      "top_ids": [
+        "O03",
+        "H08",
+        "O09",
+        "O07",
+        "P02"
+      ],
+      "reciprocal_rank_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "false_positive_no_answer": null
+    },
+    {
+      "id": "D03",
+      "split": "dev",
+      "query": "camping light hands free",
+      "method": "bm25",
+      "relevant_ids": [
+        "O03"
+      ],
+      "top_ids": [
+        "O03",
+        "H08",
+        "O07",
+        "O09",
+        "P02"
+      ],
+      "reciprocal_rank_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "false_positive_no_answer": null
+    },
+    {
+      "id": "D04",
+      "split": "dev",
+      "query": "desk cable storage",
+      "method": "tfidf",
+      "relevant_ids": [
+        "W05"
+      ],
+      "top_ids": [
+        "W05",
+        "W02",
+        "F04",
+        "W06",
+        "E06"
+      ],
+      "reciprocal_rank_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "false_positive_no_answer": null
+    },
+    {
+      "id": "D04",
+      "split": "dev",
+      "query": "desk cable storage",
+      "method": "bm25",
+      "relevant_ids": [
+        "W05"
+      ],
+      "top_ids": [
+        "W05",
+        "W02",
+        "F04",
+        "W06",
+        "W09"
+      ],
+      "reciprocal_rank_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "false_positive_no_answer": null
+    },
+    {
+      "id": "D05",
+      "split": "dev",
+      "query": "bands for strength workout",
+      "method": "tfidf",
+      "relevant_ids": [
+        "F02"
+      ],
+      "top_ids": [
+        "F02",
+        "F03",
+        "F09",
+        "F07",
+        "F08"
+      ],
+      "reciprocal_rank_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "false_positive_no_answer": null
+    },
+    {
+      "id": "D05",
+      "split": "dev",
+      "query": "bands for strength workout",
+      "method": "bm25",
+      "relevant_ids": [
+        "F02"
+      ],
+      "top_ids": [
+        "F02",
+        "F03",
+        "F09",
+        "F08",
+        "F07"
+      ],
+      "reciprocal_rank_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "false_positive_no_answer": null
+    },
+    {
+      "id": "D06",
+      "split": "dev",
+      "query": "cat toy",
+      "method": "tfidf",
+      "relevant_ids": [
+        "P04"
+      ],
+      "top_ids": [
+        "P04",
+        "P06",
+        "P05",
+        "P09",
+        "P08"
+      ],
+      "reciprocal_rank_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "false_positive_no_answer": null
+    },
+    {
+      "id": "D06",
+      "split": "dev",
+      "query": "cat toy",
+      "method": "bm25",
+      "relevant_ids": [
+        "P04"
+      ],
+      "top_ids": [
+        "P04",
+        "P05",
+        "P06",
+        "P09",
+        "P08"
+      ],
+      "reciprocal_rank_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "false_positive_no_answer": null
+    },
+    {
+      "id": "D07",
+      "split": "dev",
+      "query": "bottle",
+      "method": "tfidf",
+      "relevant_ids": [
+        "O05",
+        "F06"
+      ],
+      "top_ids": [
+        "O05",
+        "F06"
+      ],
+      "reciprocal_rank_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "false_positive_no_answer": null
+    },
+    {
+      "id": "D07",
+      "split": "dev",
+      "query": "bottle",
+      "method": "bm25",
+      "relevant_ids": [
+        "O05",
+        "F06"
+      ],
+      "top_ids": [
+        "O05",
+        "F06"
+      ],
+      "reciprocal_rank_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "false_positive_no_answer": null
+    },
+    {
+      "id": "D08",
+      "split": "dev",
+      "query": "headphones",
+      "method": "tfidf",
+      "relevant_ids": [
+        "E02"
+      ],
+      "top_ids": [
+        "E02"
+      ],
+      "reciprocal_rank_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "false_positive_no_answer": null
+    },
+    {
+      "id": "D08",
+      "split": "dev",
+      "query": "headphones",
+      "method": "bm25",
+      "relevant_ids": [
+        "E02"
+      ],
+      "top_ids": [
+        "E02"
+      ],
+      "reciprocal_rank_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "false_positive_no_answer": null
+    },
+    {
+      "id": "D09",
+      "split": "dev",
+      "query": "wirless mouse",
+      "method": "tfidf",
+      "relevant_ids": [
+        "E03"
+      ],
+      "top_ids": [
+        "E03",
+        "E04"
+      ],
+      "reciprocal_rank_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "false_positive_no_answer": null
+    },
+    {
+      "id": "D09",
+      "split": "dev",
+      "query": "wirless mouse",
+      "method": "bm25",
+      "relevant_ids": [
+        "E03"
+      ],
+      "top_ids": [
+        "E03",
+        "E04"
+      ],
+      "reciprocal_rank_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "false_positive_no_answer": null
+    },
+    {
+      "id": "D10",
+      "split": "dev",
+      "query": "garden hose",
+      "method": "tfidf",
+      "relevant_ids": [],
+      "top_ids": [],
+      "reciprocal_rank_at_k": null,
+      "recall_at_k": null,
+      "false_positive_no_answer": false
+    },
+    {
+      "id": "D10",
+      "split": "dev",
+      "query": "garden hose",
+      "method": "bm25",
+      "relevant_ids": [],
+      "top_ids": [],
+      "reciprocal_rank_at_k": null,
+      "recall_at_k": null,
+      "false_positive_no_answer": false
+    },
+    {
+      "id": "T01",
+      "split": "heldout",
+      "query": "noise cancelling headphones for train",
+      "method": "tfidf",
+      "relevant_ids": [
+        "E01"
+      ],
+      "top_ids": [
+        "E01",
+        "E02"
+      ],
+      "reciprocal_rank_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "false_positive_no_answer": null
+    },
+    {
+      "id": "T01",
+      "split": "heldout",
+      "query": "noise cancelling headphones for train",
+      "method": "bm25",
+      "relevant_ids": [
+        "E01"
+      ],
+      "top_ids": [
+        "E01",
+        "E02"
+      ],
+      "reciprocal_rank_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "false_positive_no_answer": null
+    },
+    {
+      "id": "T02",
+      "split": "heldout",
+      "query": "charge laptop away from wall outlet",
+      "method": "tfidf",
+      "relevant_ids": [
+        "E06"
+      ],
+      "top_ids": [
+        "E05",
+        "E06",
+        "W01",
+        "E07",
+        "W05"
+      ],
+      "reciprocal_rank_at_k": 0.5,
+      "recall_at_k": 1.0,
+      "false_positive_no_answer": null
+    },
+    {
+      "id": "T02",
+      "split": "heldout",
+      "query": "charge laptop away from wall outlet",
+      "method": "bm25",
+      "relevant_ids": [
+        "E06"
+      ],
+      "top_ids": [
+        "E05",
+        "E06",
+        "W01",
+        "P04",
+        "W05"
+      ],
+      "reciprocal_rank_at_k": 0.5,
+      "recall_at_k": 1.0,
+      "false_positive_no_answer": null
+    },
+    {
+      "id": "T03",
+      "split": "heldout",
+      "query": "connect laptop to hdmi and ethernet",
+      "method": "tfidf",
+      "relevant_ids": [
+        "E07"
+      ],
+      "top_ids": [
+        "E07",
+        "W01",
+        "E03",
+        "E06",
+        "E05"
+      ],
+      "reciprocal_rank_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "false_positive_no_answer": null
+    },
+    {
+      "id": "T03",
+      "split": "heldout",
+      "query": "connect laptop to hdmi and ethernet",
+      "method": "bm25",
+      "relevant_ids": [
+        "E07"
+      ],
+      "top_ids": [
+        "E07",
+        "W01",
+        "E03",
+        "E06",
+        "E05"
+      ],
+      "reciprocal_rank_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "false_positive_no_answer": null
+    },
+    {
+      "id": "T04",
+      "split": "heldout",
+      "query": "camera with privacy shutter for calls",
+      "method": "tfidf",
+      "relevant_ids": [
+        "E09"
+      ],
+      "top_ids": [
+        "E09",
+        "E01"
+      ],
+      "reciprocal_rank_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "false_positive_no_answer": null
+    },
+    {
+      "id": "T04",
+      "split": "heldout",
+      "query": "camera with privacy shutter for calls",
+      "method": "bm25",
+      "relevant_ids": [
+        "E09"
+      ],
+      "top_ids": [
+        "E09",
+        "E01"
+      ],
+      "reciprocal_rank_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "false_positive_no_answer": null
+    },
+    {
+      "id": "T05",
+      "split": "heldout",
+      "query": "keep coffee warm on commute",
+      "method": "tfidf",
+      "relevant_ids": [
+        "H01"
+      ],
+      "top_ids": [
+        "H08",
+        "H03",
+        "W05",
+        "H01",
+        "H02"
+      ],
+      "reciprocal_rank_at_k": 0.25,
+      "recall_at_k": 1.0,
+      "false_positive_no_answer": null
+    },
+    {
+      "id": "T05",
+      "split": "heldout",
+      "query": "keep coffee warm on commute",
+      "method": "bm25",
+      "relevant_ids": [
+        "H01"
+      ],
+      "top_ids": [
+        "H08",
+        "H03",
+        "W05",
+        "H01",
+        "H02"
+      ],
+      "reciprocal_rank_at_k": 0.25,
+      "recall_at_k": 1.0,
+      "false_positive_no_answer": null
+    },
+    {
+      "id": "T06",
+      "split": "heldout",
+      "query": "measure flour in grams",
+      "method": "tfidf",
+      "relevant_ids": [
+        "H05"
+      ],
+      "top_ids": [
+        "H05",
+        "P01"
+      ],
+      "reciprocal_rank_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "false_positive_no_answer": null
+    },
+    {
+      "id": "T06",
+      "split": "heldout",
+      "query": "measure flour in grams",
+      "method": "bm25",
+      "relevant_ids": [
+        "H05"
+      ],
+      "top_ids": [
+        "H05",
+        "P01"
+      ],
+      "reciprocal_rank_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "false_positive_no_answer": null
+    },
+    {
+      "id": "T07",
+      "split": "heldout",
+      "query": "glass food containers",
+      "method": "tfidf",
+      "relevant_ids": [
+        "H06"
+      ],
+      "top_ids": [
+        "H06",
+        "H04",
+        "H05"
+      ],
+      "reciprocal_rank_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "false_positive_no_answer": null
+    },
+    {
+      "id": "T07",
+      "split": "heldout",
+      "query": "glass food containers",
+      "method": "bm25",
+      "relevant_ids": [
+        "H06"
+      ],
+      "top_ids": [
+        "H06",
+        "H04",
+        "H05"
+      ],
+      "reciprocal_rank_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "false_positive_no_answer": null
+    },
+    {
+      "id": "T08",
+      "split": "heldout",
+      "query": "lamp for reading in bed",
+      "method": "tfidf",
+      "relevant_ids": [
+        "H08"
+      ],
+      "top_ids": [
+        "H08",
+        "P06",
+        "W09"
+      ],
+      "reciprocal_rank_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "false_positive_no_answer": null
+    },
+    {
+      "id": "T08",
+      "split": "heldout",
+      "query": "lamp for reading in bed",
+      "method": "bm25",
+      "relevant_ids": [
+        "H08"
+      ],
+      "top_ids": [
+        "H08",
+        "P06",
+        "W09"
+      ],
+      "reciprocal_rank_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "false_positive_no_answer": null
+    },
+    {
+      "id": "T09",
+      "split": "heldout",
+      "query": "rain gear for hiking",
+      "method": "tfidf",
+      "relevant_ids": [
+        "O02"
+      ],
+      "top_ids": [
+        "O02",
+        "O01",
+        "O05",
+        "O03",
+        "O06"
+      ],
+      "reciprocal_rank_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "false_positive_no_answer": null
+    },
+    {
+      "id": "T09",
+      "split": "heldout",
+      "query": "rain gear for hiking",
+      "method": "bm25",
+      "relevant_ids": [
+        "O02"
+      ],
+      "top_ids": [
+        "O02",
+        "O01",
+        "O03",
+        "O05",
+        "O06"
+      ],
+      "reciprocal_rank_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "false_positive_no_answer": null
+    },
+    {
+      "id": "T10",
+      "split": "heldout",
+      "query": "something soft to sleep on inside tent",
+      "method": "tfidf",
+      "relevant_ids": [
+        "O07"
+      ],
+      "top_ids": [
+        "O07",
+        "P06",
+        "O08",
+        "E02"
+      ],
+      "reciprocal_rank_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "false_positive_no_answer": null
+    },
+    {
+      "id": "T10",
+      "split": "heldout",
+      "query": "something soft to sleep on inside tent",
+      "method": "bm25",
+      "relevant_ids": [
+        "O07"
+      ],
+      "top_ids": [
+        "O07",
+        "P06",
+        "O08",
+        "E02"
+      ],
+      "reciprocal_rank_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "false_positive_no_answer": null
+    },
+    {
+      "id": "T11",
+      "split": "heldout",
+      "query": "portable chair",
+      "method": "tfidf",
+      "relevant_ids": [
+        "O04"
+      ],
+      "top_ids": [
+        "O04"
+      ],
+      "reciprocal_rank_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "false_positive_no_answer": null
+    },
+    {
+      "id": "T11",
+      "split": "heldout",
+      "query": "portable chair",
+      "method": "bm25",
+      "relevant_ids": [
+        "O04"
+      ],
+      "top_ids": [
+        "O04"
+      ],
+      "reciprocal_rank_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "false_positive_no_answer": null
+    },
+    {
+      "id": "T12",
+      "split": "heldout",
+      "query": "raise laptop screen",
+      "method": "tfidf",
+      "relevant_ids": [
+        "W01"
+      ],
+      "top_ids": [
+        "W01",
+        "W02"
+      ],
+      "reciprocal_rank_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "false_positive_no_answer": null
+    },
+    {
+      "id": "T12",
+      "split": "heldout",
+      "query": "raise laptop screen",
+      "method": "bm25",
+      "relevant_ids": [
+        "W01"
+      ],
+      "top_ids": [
+        "W01",
+        "W02"
+      ],
+      "reciprocal_rank_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "false_positive_no_answer": null
+    },
+    {
+      "id": "T13",
+      "split": "heldout",
+      "query": "weekly board reusable tasks",
+      "method": "tfidf",
+      "relevant_ids": [
+        "W07"
+      ],
+      "top_ids": [
+        "W07",
+        "O05",
+        "H07",
+        "P05",
+        "W05"
+      ],
+      "reciprocal_rank_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "false_positive_no_answer": null
+    },
+    {
+      "id": "T13",
+      "split": "heldout",
+      "query": "weekly board reusable tasks",
+      "method": "bm25",
+      "relevant_ids": [
+        "W07"
+      ],
+      "top_ids": [
+        "W07",
+        "H07",
+        "O05",
+        "P05",
+        "W05"
+      ],
+      "reciprocal_rank_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "false_positive_no_answer": null
+    },
+    {
+      "id": "T14",
+      "split": "heldout",
+      "query": "quiet keyboard",
+      "method": "tfidf",
+      "relevant_ids": [
+        "W06"
+      ],
+      "top_ids": [
+        "W06",
+        "E03",
+        "W02"
+      ],
+      "reciprocal_rank_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "false_positive_no_answer": null
+    },
+    {
+      "id": "T14",
+      "split": "heldout",
+      "query": "quiet keyboard",
+      "method": "bm25",
+      "relevant_ids": [
+        "W06"
+      ],
+      "top_ids": [
+        "W06",
+        "E03",
+        "W02"
+      ],
+      "reciprocal_rank_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "false_positive_no_answer": null
+    },
+    {
+      "id": "T15",
+      "split": "heldout",
+      "query": "mat for stretching",
+      "method": "tfidf",
+      "relevant_ids": [
+        "F01"
+      ],
+      "top_ids": [
+        "F01",
+        "F05"
+      ],
+      "reciprocal_rank_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "false_positive_no_answer": null
+    },
+    {
+      "id": "T15",
+      "split": "heldout",
+      "query": "mat for stretching",
+      "method": "bm25",
+      "relevant_ids": [
+        "F01"
+      ],
+      "top_ids": [
+        "F01",
+        "F05"
+      ],
+      "reciprocal_rank_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "false_positive_no_answer": null
+    },
+    {
+      "id": "T16",
+      "split": "heldout",
+      "query": "jump roep for cardio",
+      "method": "tfidf",
+      "relevant_ids": [
+        "F04"
+      ],
+      "top_ids": [
+        "F04"
+      ],
+      "reciprocal_rank_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "false_positive_no_answer": null
+    },
+    {
+      "id": "T16",
+      "split": "heldout",
+      "query": "jump roep for cardio",
+      "method": "bm25",
+      "relevant_ids": [
+        "F04"
+      ],
+      "top_ids": [
+        "F04"
+      ],
+      "reciprocal_rank_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "false_positive_no_answer": null
+    },
+    {
+      "id": "T17",
+      "split": "heldout",
+      "query": "bag separate shoes gym",
+      "method": "tfidf",
+      "relevant_ids": [
+        "F07"
+      ],
+      "top_ids": [
+        "F07",
+        "F06",
+        "H09",
+        "E03",
+        "O05"
+      ],
+      "reciprocal_rank_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "false_positive_no_answer": null
+    },
+    {
+      "id": "T17",
+      "split": "heldout",
+      "query": "bag separate shoes gym",
+      "method": "bm25",
+      "relevant_ids": [
+        "F07"
+      ],
+      "top_ids": [
+        "F07",
+        "F06",
+        "H09",
+        "E03",
+        "O04"
+      ],
+      "reciprocal_rank_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "false_positive_no_answer": null
+    },
+    {
+      "id": "T18",
+      "split": "heldout",
+      "query": "washable bed for small dog",
+      "method": "tfidf",
+      "relevant_ids": [
+        "P06"
+      ],
+      "top_ids": [
+        "P06",
+        "P01",
+        "P02",
+        "P03",
+        "P08"
+      ],
+      "reciprocal_rank_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "false_positive_no_answer": null
+    },
+    {
+      "id": "T18",
+      "split": "heldout",
+      "query": "washable bed for small dog",
+      "method": "bm25",
+      "relevant_ids": [
+        "P06"
+      ],
+      "top_ids": [
+        "P06",
+        "P01",
+        "P02",
+        "P03",
+        "P08"
+      ],
+      "reciprocal_rank_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "false_positive_no_answer": null
+    },
+    {
+      "id": "T19",
+      "split": "heldout",
+      "query": "water bowl folds for dog walk",
+      "method": "tfidf",
+      "relevant_ids": [
+        "P07"
+      ],
+      "top_ids": [
+        "P07",
+        "P03"
+      ],
+      "reciprocal_rank_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "false_positive_no_answer": null
+    },
+    {
+      "id": "T19",
+      "split": "heldout",
+      "query": "water bowl folds for dog walk",
+      "method": "bm25",
+      "relevant_ids": [
+        "P07"
+      ],
+      "top_ids": [
+        "P07",
+        "P03"
+      ],
+      "reciprocal_rank_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "false_positive_no_answer": null
+    },
+    {
+      "id": "T20",
+      "split": "heldout",
+      "query": "robot vacuum cleaner",
+      "method": "tfidf",
+      "relevant_ids": [],
+      "top_ids": [],
+      "reciprocal_rank_at_k": null,
+      "recall_at_k": null,
+      "false_positive_no_answer": false
+    },
+    {
+      "id": "T20",
+      "split": "heldout",
+      "query": "robot vacuum cleaner",
+      "method": "bm25",
+      "relevant_ids": [],
+      "top_ids": [],
+      "reciprocal_rank_at_k": null,
+      "recall_at_k": null,
+      "false_positive_no_answer": false
+    }
+  ]
+}
