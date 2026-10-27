@@ -1,0 +1,28 @@
+{
+  "source_commit": "85aa1d7441983af35b13c579533297518f73d1e2",
+  "files_sha256": {
+    ".gitattributes": "9396bb7974521bb30a187b6e2909d96e090a3b6acd758b84e904a76a1337b030",
+    ".github/workflows/ci.yml": "adddf601b0bf143fbb7b8f94c1358a637b5b33123eff070384c1607f5cfe69e0",
+    ".gitignore": "fbdd35833df12cf9eaf7af2a1d18661d40f3a05797cd88f08b514f0c5657fc8c",
+    "LICENSE": "731b7cc771586bf9268804c8ac88d95d63f570f3a39e7e3be027a85b1e5c6600",
+    "PACKAGE_NOTES.txt": "18845dce4de6f9cccfe370576ea339b848cc4c58e139016e449a032b0dc9642a",
+    "README.md": "f9c66d7d8cb860ff686e8392643c582735f1d0b9dce2442df755f95fa1a76292",
+    "catalog_search/__init__.py": "6d456ce7483767f75037f4e0bfe37631fce52eea6c4272548f521f02ca50c3e1",
+    "catalog_search/engine.py": "8fc0409a211c7742eecacdd533357a6968557463be17d1cf01e329a26ba94787",
+    "catalog_search/evaluate.py": "d36d7e50ae4df92f20aa2fe433301bc1f6adf589d3774deecd2d54ddcfa6c754",
+    "catalog_search/server.py": "e6113b7d070e9379218ca984b558664a54becfd0b45960920871dea4f756f6bc",
+    "data/README.md": "5ce7ea639a82a9ccb3573da948c31161ce17576337fc215f6f14366311a2e1c6",
+    "data/catalog.json": "89e041e1cca6cff176ffcfbeede98114b344f47485ba9233126d138ddcc81ca6",
+    "data/queries.json": "73c3d5af9eb567fa222552be61318dc7f29179fb9d8ae54c09f81f163efe9308",
+    "docs/design.md": "ee2f5f18725652e512d5d1bf3232b603694218337a4a3aaab626755795d0c5f9",
+    "docs/verification.md": "509174536465badefe7e9ecd2c5511bf4bb7d533532d417a7cc9ad90187e3ec1",
+    "pyproject.toml": "fb4fc3b47d2601ae9a567c4530f00f565db5ef8d1cfd11c0401e54497ef64a60",
+    "results/evaluation.json": "ebd97ca29bc43694d8aea113756d87268ed794b88b73962c6522d654f2fa387e",
+    "results/per-query.csv": "1e564249001964c3cd44940ce220a90dd21e3d0342ea5dc5be0aa4d6f10b5fc7",
+    "static/app.js": "c516b0b58e23c4937e5060cdc8ac143b2328c2843222cd95e8291221ee7a3f69",
+    "static/index.html": "56d118fefe1806c27e1aec6c74a7a13da401c4d3036389dd2373b47cf39aa10d",
+    "static/styles.css": "0754e803ef016c18b0dc37da944707a4f32942c46eb9558653496619f75297b7",
+    "tests/test_engine.py": "87b4901da2f78ae744be68a7ce4bd594972bf8a5587a9f207836321a2f97a251",
+    "tests/test_http.py": "8a1bfe460f9c7a0430c40d7c741186a4865394358b99903861d598753b215efb"
+  }
+}

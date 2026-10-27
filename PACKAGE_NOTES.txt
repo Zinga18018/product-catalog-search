@@ -1,0 +1,10 @@
+Product Catalog Search source package
+Source commit: 85aa1d7441983af35b13c579533297518f73d1e2
+Packaged at: 2026-10-27T00:01:04.539080+00:00
+
+Source, tests, documentation, synthetic fixtures, and recorded evaluation are included.
+Browser images and their Markdown references are omitted from this distribution.
+Git history remains intact in the local checkout and is not bundled.
+No credentials, dependencies, caches, or hosting resources are included.
+Run commands in README.md from this directory after extraction.
+Retrieval is lexical only; evaluation is a small author-judged synthetic demonstration.

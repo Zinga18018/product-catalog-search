@@ -1,0 +1,6 @@
+[project]
+name = "product-catalog-search"
+version = "0.1.0"
+description = "Synthetic product search with TF-IDF and BM25, transparent scores, and reproducible evaluation"
+requires-python = ">=3.11"
+dependencies = []
