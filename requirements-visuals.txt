@@ -1,0 +1,2 @@
+# Optional chart regeneration only; the search demo remains standard-library-only.
+matplotlib==3.10.8

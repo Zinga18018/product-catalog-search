@@ -5,15 +5,9 @@ A runnable search laboratory for **54 clearly synthetic products**. Compare a TF
 This is a new portfolio demo built with Codex assistance in October 2026. The catalog and query labels were authored for the demo; there is no retail/customer data, historical project claim, or production performance claim. See [data provenance](data/README.md) and [design decisions](docs/design.md).
 
 
-## Evaluation at a glance
-
-![Both TF-IDF and BM25 place the first relevant product at rank 1 for 17 of 19 answerable held-out queries, rank 2 for one, and rank 4 for one. The chart shows the two lexical failure cases and separately reports the single no-answer query.](docs/figures/heldout-ranking.svg)
-
-A diagnostic view of the checked-in **synthetic, author-labelled** evaluation—not a screenshot, independent benchmark, or claim that one method is better. Lower-order rankings can differ even when these metrics tie. [Figure source, data and reproduction](docs/VISUALS.md).
-
 ## Run locally
 
-Python 3.11 or newer is required. There are **no third-party dependencies**, build step, API keys, network calls, or model downloads. Run commands from the repository root:
+Python 3.11 or newer is required. The search demo has **no third-party dependencies**, build step, API keys, network calls, or model downloads. Regenerating the optional README plot uses Matplotlib. Run commands from the repository root:
 
 ```sh
 python -m catalog_search.server
@@ -49,6 +43,11 @@ The 30 queries were fixed before evaluation: 10 development and 20 held-out, inc
 | Development | 9 / 1 | BM25 | 1.0000 | 1.0000 |
 | Held-out | 19 / 1 | TF-IDF | 0.9342 | 1.0000 |
 | Held-out | 19 / 1 | BM25 | 0.9342 | 1.0000 |
+
+
+![First relevant result by rank: both TF-IDF and BM25 rank it first for 17 of 19 answerable held-out queries, second for one, and fourth for one.](docs/figures/heldout-ranking.svg)
+
+The methods share these first-relevant ranks; their full rankings can differ. [Query examples and plot source](docs/VISUALS.md).
 
 MRR@5 averages the reciprocal rank of the first relevant result within five results (zero if absent). Recall@5 averages the fraction of labeled relevant products retrieved in five results. Both average **only answerable queries**, with equal weight per query. No-answer false-positive rate is reported separately: both methods returned zero results for the single no-answer query in each split (0/1). This sample is too small to establish reliable rejection behavior or superiority of either method. Related but irrelevant lexical matches can still appear for other unsupported needs.
 
