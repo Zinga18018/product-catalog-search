@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Compare TF-IDF and BM25 search on a small synthetic product catalog, with filters and explanations.">
+    <title>Product Catalog Search</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#search-query">Skip to search</a>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="wordmark" href="/" aria-label="Product Catalog Search home"><span class="brand-symbol" aria-hidden="true">c.</span><span>CATALOG LAB</span></a>
+        <span class="demo-label"><span aria-hidden="true"></span>LOCAL SEARCH DEMO</span>
+      </header>
+
+      <main>
+        <section class="intro" aria-labelledby="page-title">
+          <div class="intro-copy">
+            <p class="eyebrow">PRODUCT CATALOG SEARCH</p>
+            <h1 id="page-title">A closer look<br>at a better match.</h1>
+            <p class="lead">Search a synthetic catalog. Compare two lexical rankers. See which words put each product on the list.</p>
+            <div class="catalog-stats" aria-label="Catalog overview">
+              <div><strong id="product-count">—</strong><span>synthetic products</span></div>
+              <div><strong id="category-count">—</strong><span>categories</span></div>
+              <div><strong>02</strong><span>lexical methods</span></div>
+            </div>
+          </div>
+          <aside class="method-note" aria-label="About the search methods">
+            <div class="note-topline"><span class="small-grid" aria-hidden="true">▦</span><span>THE SEARCH BENCH</span><span class="note-number">01 / 01</span></div>
+            <h2>Same catalog.<br>Different ranking.</h2>
+            <div class="method-summary"><span class="method-letter">A</span><div><strong>TF-IDF</strong><p>Cosine similarity with rare-word weighting.</p></div></div>
+            <div class="method-summary"><span class="method-letter">B</span><div><strong>BM25</strong><p>Term saturation and document-length normalization.</p></div></div>
+            <p class="method-caveat">Both match words. Dense semantic retrieval is not implemented.</p>
+          </aside>
+        </section>
+
+        <section class="search-panel" aria-labelledby="search-title">
+          <div class="section-topline"><h2 id="search-title">Find something useful</h2><span class="section-index">SEARCH / 01</span></div>
+          <form id="search-form" role="search" novalidate>
+            <label class="sr-only" for="search-query">Search the product catalog</label>
+            <div class="query-row"><span class="search-icon" aria-hidden="true"></span><input id="search-query" name="q" type="search" placeholder="Try a product, a feature, or a need…" maxlength="256" autocomplete="off"><button class="search-button" type="submit">Search catalog <span aria-hidden="true">↗</span></button></div>
+            <div class="filter-row">
+              <div class="field category-field"><label for="category">Category</label><select id="category" name="category"><option value="">All categories</option></select></div>
+              <div class="field price-field"><label for="min-price">Min price · USD</label><input id="min-price" name="min_price" type="number" min="0" step="0.01" placeholder="0.00" inputmode="decimal"></div>
+              <span class="price-divider" aria-hidden="true">—</span>
+              <div class="field price-field"><label for="max-price">Max price · USD</label><input id="max-price" name="max_price" type="number" min="0" step="0.01" placeholder="Any price" inputmode="decimal"></div>
+              <div class="view-field"><label for="view-mode">View</label><select id="view-mode"><option value="compare">Compare both</option><option value="tfidf">TF-IDF only</option><option value="bm25">BM25 only</option></select></div>
+              <button id="clear-filters" class="text-button" type="button">Reset</button>
+            </div>
+          </form>
+          <div class="examples"><span>TRY A SEARCH</span><button class="example-chip" type="button" data-query="wireless headphones">wireless headphones</button><button class="example-chip" type="button" data-query="bedside reading lamp">bedside reading lamp</button><button class="example-chip" type="button" data-query="hiking backpack">hiking backpack</button><button class="example-chip" type="button" data-query="coffee grinder">coffee grinder</button></div>
+          <p id="search-error" class="error-message" role="alert" hidden></p>
+        </section>
+
+        <section class="results-section" aria-labelledby="results-title" aria-busy="false">
+          <div class="results-heading"><div><p class="eyebrow">THE RESULTS</p><h2 id="results-title">Explore the catalog</h2></div><p id="comparison-note" class="comparison-note">Blank search shows catalog order.</p></div>
+          <p id="search-status" class="sr-only" role="status" aria-live="polite"></p>
+          <div id="results-grid" class="results-grid"></div>
+        </section>
+
+        <section id="evaluation-section" class="evaluation-section" aria-labelledby="evaluation-title" hidden>
+          <div><p class="eyebrow">MEASURE, THEN COMPARE</p><h2 id="evaluation-title">Held-out query results</h2><p class="evaluation-description">Measured on this small, synthetic, author-labeled catalog. These results do not establish real-world search quality.</p></div>
+          <div id="evaluation-metrics" class="evaluation-metrics"></div>
+        </section>
+
+        <section class="reading-note" aria-label="How to read these results"><strong>A note on scores</strong><p>Scores are useful within a method. TF-IDF and BM25 use different scales, so their raw scores should not be compared directly. Expand a match to inspect its contributing terms.</p></section>
+      </main>
+
+      <footer class="site-footer"><span>Product Catalog Search <span aria-hidden="true">/</span> A small retrieval experiment</span><span>Fictional products · USD demo prices · No checkout</span></footer>
+    </div>
+  </body>
+</html>
